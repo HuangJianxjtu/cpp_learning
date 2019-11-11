@@ -1,0 +1,7 @@
+# ignore build directories
+build
+
+# ignore vscode configuration files
+.vscode
+
+a.out
