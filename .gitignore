@@ -1,7 +1,9 @@
 # ignore build directories
 build
 
-# ignore vscode configuration files
+# ignore configuration files
 .vscode
+.idea
 
+cmake-build-debug
 a.out
