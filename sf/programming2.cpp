@@ -1,4 +1,3 @@
-#include <cmath>
 #include <iostream>
 
 //顺丰视觉算法工程师笔试
@@ -8,7 +7,8 @@ using namespace std;
 
 int main()
 {
-    int n, q=0;
+    int n=0, q=0;
+    // int n=0, q=0;
     int* scores = new int[n];
     cin>>n>>q;
 
