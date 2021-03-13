@@ -17,7 +17,7 @@ int getMost(vector<int>& nums)
             ++ret.first->second;
         }
     }
-    sort(nums.begin(), nums.end());
+    // sort(nums.begin(), nums.end());
     int count = m.begin()->second;
     int result = m.begin()->first;
     for(auto map_it = m.begin();map_it!=m.end(); ++map_it)
