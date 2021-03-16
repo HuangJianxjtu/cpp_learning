@@ -22,3 +22,6 @@ add_executable(sf_programming2_myself sf/programming2_myself.cpp)
 add_executable(meituan_q1 meituan/question1.cpp)
 add_executable(meituan_q2 meituan/question2.cpp)
 add_executable(meituan_q3 meituan/question3.cpp)
+add_executable(meituan_interview meituan/interview.cpp)
+
+add_executable(permutation backTracking/permutation.cpp)
