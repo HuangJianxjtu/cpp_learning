@@ -23,5 +23,10 @@ add_executable(meituan_q1 meituan/question1.cpp)
 add_executable(meituan_q2 meituan/question2.cpp)
 add_executable(meituan_q3 meituan/question3.cpp)
 add_executable(meituan_interview meituan/interview.cpp)
+add_executable(q2_myself meituan/q2_myself.cpp)
+add_executable(q3_myself meituan/q3_myself.cpp)
 
 add_executable(permutation backTracking/permutation.cpp)
+
+add_executable(baidu_q1 baidu/question1.cpp)
+add_executable(baidu_q2 baidu/question2.cpp)
