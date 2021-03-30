@@ -14,6 +14,7 @@ add_executable(overload1 basic_cpp/overload1.cpp)
 
 add_executable(test test.cpp)
 add_executable(delete_vector_element basic_cpp/delete_vector_element.cpp)
+add_executable(for_switch basic_cpp/for_switch.cpp)
 
 add_executable(sf_programming1 sf/programming1.cpp)
 add_executable(sf_programming2 sf/programming2.cpp)
@@ -27,9 +28,19 @@ add_executable(q2_myself meituan/q2_myself.cpp)
 add_executable(q3_myself meituan/q3_myself.cpp)
 add_executable(q3_luo meituan/q3_luo.cpp)
 
-add_executable(permutation backTracking/permutation.cpp)
+add_executable(permutation backTracking/permutation_checked.cpp)
+add_executable(minSum_index backTracking/minSum_orderSequence_index.cpp)
 
 add_executable(baidu_q1 baidu/question1.cpp)
 add_executable(baidu_q2 baidu/question2.cpp)
 
 add_executable(huawei_q1 huawei/question1.cpp)
+
+add_executable(jizhijia_q1 jizhijia/q1.cpp)
+add_executable(jizhijia_q1_1 jizhijia/q1_1.cpp)
+add_executable(jizhijia_q2 jizhijia/q2.cpp)
+add_executable(jizhijia_q2_1 jizhijia/q2_1.cpp)
+
+add_executable(swap_1 basic_cpp/swap.cpp)
+
+add_executable(maxSubArray leetcode/53_maxSubArray.cpp)

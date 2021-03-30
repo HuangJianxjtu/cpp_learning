@@ -3,6 +3,8 @@
 
 using namespace std;
 
+// 全排列问题
+// TODO：leetcode中的题目
 void dfs(string ss, bool chars_b[], int level, vector<char> res) {
     //截止条件
     int length = ss.length();
