@@ -44,3 +44,5 @@ add_executable(jizhijia_q2_1 jizhijia/q2_1.cpp)
 add_executable(swap_1 basic_cpp/swap.cpp)
 
 add_executable(maxSubArray leetcode/53_maxSubArray.cpp)
+add_executable(uniquePaths leetcode/62_uniquePaths.cpp)
+add_executable(uniquePaths_ii leetcode/63_uniquePaths_ii.cpp)
