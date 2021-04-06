@@ -1,5 +1,5 @@
 #声明要求的cmake最低版本
-cmake_minimum_required(VERSION 2.8)
+cmake_minimum_required(VERSION 3.10)
 
 #声明一个cmake工程
 project(cpp_learning)
@@ -49,3 +49,4 @@ add_executable(uniquePaths_ii leetcode/63_uniquePaths_ii.cpp)
 add_executable(offer_24_reverseList leetcode/offer_24_reverseList.cpp)
 add_executable(class_learning basic_cpp/class_learning.cpp)
 add_executable(cpp11_newPtr basic_cpp/cpp11_newFeatrue_ptr.cpp)
+add_executable(offer25_mergeTwoLists leetcode/offer25_mergeTwoLists.cpp)
