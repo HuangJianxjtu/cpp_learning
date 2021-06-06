@@ -1,5 +1,7 @@
 # 整体思路
 [参考](https://www.zhihu.com/question/321738058/answer/1279464192)
+
+[电子书：力扣加加－努力做西湖区最好的算法题解](https://leetcode-solution-leetcode-pp.gitbook.io/leetcode-solution/)
 ##基础篇（30 天）
 基础永远是最重要的，先把最最基础的这些搞熟，磨刀不误砍柴工。
 >* 数组，队列，栈
