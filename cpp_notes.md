@@ -21,6 +21,13 @@ C++不能直接给出数组的大小,得用sizeof()函数来计算. 因此平时
 ### 6. new delete, malloc free
 [参考](https://blog.csdn.net/qq_37535749/article/details/113534079)
 
+### 6.1　C++类实例化的两种方式:new与不new
+```c++
+A a; //a存在栈上
+A* a = new A(); //a存在堆上
+```
+[参考](https://zhuanlan.zhihu.com/p/62106872)
+
 ### 7. strlen
 包含在<string.h>, strlen所作的仅仅是一个计数器的工作，它从内存的某个位置（可以是字符串开头，中间某个位置，甚至是某个不确定的内存区域）开始扫描，
 直到碰到第一个字符串结束符'\0'为止，然后返回计数器值。
@@ -60,3 +67,6 @@ C++不能直接给出数组的大小,得用sizeof()函数来计算. 因此平时
 用函数指针实现？
 
 ### 13. class和struct有啥区别
+* 区别不大，大多数情况下可互用。[参考](https://blog.csdn.net/alidada_blog/article/details/83419757)
+* 主要区别是在默认的继承访问权上，class默认的是private,strcut默认的是public。
+* 一般情况下，struct用于数据结构，class用于定义对象。
