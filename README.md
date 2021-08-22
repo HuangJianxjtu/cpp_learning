@@ -2,10 +2,10 @@
 
 codes and notes for cpp learning
 
-* Recommended book:Beginning C++
+* Recommended book: C++ Primer Plus(6th)
 
 * Recommended environment: Ubuntu
 
 * Recommended compiler: g++
 
-* Recommended code editor: VScode
+* Recommended code editor: CLion or VScode
