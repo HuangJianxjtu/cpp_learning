@@ -12,7 +12,7 @@ set(CMAKE_CXX_STANDARD 11)
 add_executable(overload basic_cpp/overload.cpp)
 add_executable(overload1 basic_cpp/overload1.cpp)
 
-add_executable(test_hj test.cpp)
+add_executable(test_hj basic_cpp/argc_and_argv.cpp)
 add_executable(delete_vector_element basic_cpp/delete_vector_element.cpp)
 add_executable(for_switch basic_cpp/for_switch.cpp)
 
@@ -61,3 +61,5 @@ add_executable(leetcode_142 leetcode/142_Linked_List_Cycle_plus.cpp)
 add_executable(leetcode_143 leetcode/143_Reorder_List.cpp)
 add_executable(leetcode_148 leetcode/148_Sort_List.cpp)
 add_executable(leetcode_206 leetcode/206_Reverse_Linked_List.cpp)
+
+add_executable(queue_demo basic_cpp/queue_demo.cpp)
