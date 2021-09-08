@@ -54,7 +54,7 @@ A* a = new A(); //a存在堆上
 
 >* (4)多线程  
    > 在C++11以前，C++的多线程编程均需依赖系统或第三方接口实现，一定程度上影响了代码的移植性。C++11中，引入了boost库中的多线程部分内容，形成C++标准，形成标准后的boost多线程编程部分接口基本没有变化，这样方便了以前使用boost接口开发的使用者切换使用C++标准接口，把容易把boost接口升级为C++接口。
->>* std::thread
+>>* std::thread, 子线程的开启可用[join()](./basic_cpp/thread_demo.cpp)和[detach()](./basic_cpp/thread_demo_plus.cpp), 用[mutex(互斥量)](./basic_cpp/thread_demo_plus_mutex.cpp)来保证数据的访问的安全
 >>* std::atomic
 
 ### 11. [模板template](https://www.runoob.com/w3cnote/c-templates-detail.html)

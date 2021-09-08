@@ -63,3 +63,12 @@ add_executable(leetcode_148 leetcode/148_Sort_List.cpp)
 add_executable(leetcode_206 leetcode/206_Reverse_Linked_List.cpp)
 
 add_executable(queue_demo basic_cpp/queue_demo.cpp)
+
+add_executable(thread_demo basic_cpp/thread_demo.cpp)
+target_link_libraries(thread_demo pthread)
+
+add_executable(thread_demo_plus_mutex basic_cpp/thread_demo_plus_mutex.cpp)
+target_link_libraries(thread_demo_plus_mutex pthread)
+
+add_executable(thread_demo_plus basic_cpp/thread_demo_plus.cpp)
+target_link_libraries(thread_demo_plus pthread)
