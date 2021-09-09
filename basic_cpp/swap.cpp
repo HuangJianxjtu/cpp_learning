@@ -31,7 +31,8 @@ int main(){
     cout<<"after swap, a="<<a<<", "<<"b="<<b<<endl;
 
     cout<<"before swap, c="<<c<<", "<<"b="<<c<<endl;
-    pointer_swap(&c,&d);
+    pointer_swap<float>(&c, &d);  //NOTE:显式地声明类型。这对于模板函数是非必要的，而对于模板类是必要的
+    // pointer_swap(&c,&d);
     cout<<"after swap, c="<<c<<", "<<"b="<<c<<endl;
     return 0;
 }

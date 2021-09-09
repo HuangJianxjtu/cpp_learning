@@ -74,3 +74,4 @@ add_executable(thread_demo_plus basic_cpp/thread_demo_plus.cpp)
 target_link_libraries(thread_demo_plus pthread)
 
 add_executable(const_demo basic_cpp/const_demo.cpp)
+add_executable(template_class_demo basic_cpp/template_class_demo.cpp)

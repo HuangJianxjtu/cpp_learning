@@ -1,5 +1,9 @@
 # C++ 学习笔记
 
+### 0. 命名约定
+* 函数、类: Pascal拼写法，例如MultiplyNumbers()
+* 变量名: 驼峰命名法，例如firstNumber, secondNumber
+
 ### 1.函数重载与运算符重载(overload)
 overload与override
 ### 2.什么是const
@@ -58,8 +62,9 @@ A* a = new A(); //a存在堆上
 >>* std::atomic
 
 ### 11. [模板template](https://www.runoob.com/w3cnote/c-templates-detail.html)
->* **目的**：使得类中的某些数据成员或者成员函数的参数、返回值**能取任意类型**
->* 通常有两种形式：[函数模板](./basic_cpp/swap.cpp)和 类模板
+* **目的**：使得类中的某些数据成员或者成员函数的参数、返回值**能取任意类型**
+* 模板定义 `template <typename T> `
+* 通常有两种形式：[函数模板](./basic_cpp/swap.cpp)和 类模板
 >>* 函数模板针对仅参数类型不同的函数
 >>* 类模板针对仅数据成员和成员函数类型不同的类
 
