@@ -53,13 +53,23 @@ A* a = new A(); //a存在堆上
 >* (3)STL容器
 >>* std::array
 >>* std::forward_list
->>* unordered_map
+>>* unordered_map****
 >>* unordered_set
 
 >* (4)多线程  
-   > 在C++11以前，C++的多线程编程均需依赖系统或第三方接口实现，一定程度上影响了代码的移植性。C++11中，引入了boost库中的多线程部分内容，形成C++标准，形成标准后的boost多线程编程部分接口基本没有变化，这样方便了以前使用boost接口开发的使用者切换使用C++标准接口，把容易把boost接口升级为C++接口。
->>* std::thread, 子线程的开启可用[join()](./basic_cpp/thread_demo.cpp)和[detach()](./basic_cpp/thread_demo_plus.cpp), 用[mutex(互斥量)](./basic_cpp/thread_demo_plus_mutex.cpp)来保证数据的访问的安全
->>* std::atomic
+   > 在C++11以前，C++的多线程编程均需依赖系统或第三方接口实现，一定程度上影响了代码的移植性。C++11中，引入了boost库中的多线程部分内容，形成C++
+标准，形成标准后的boost多线程编程部分接口基本没有变化，这样方便了以前使用boost接口开发的使用者切换使用C++标准接口，把容易把boost接口升级为C++接口。
+>>* 头文件thread. 子线程的开启可用[join()](./basic_cpp/thread_demo.cpp)和[detach()](./basic_cpp/thread_demo_plus.cpp), 
+    用[mutex(互斥量)](./basic_cpp/thread_demo_plus_mutex.cpp)来保证数据的访问的安全。join与detach的区别是,join中子线程执行结束后主
+    线程才继续；而detach中子线程与主线程同时执行，若主线程先结束则所有程序都会被终止。**一个线程只能被join或detach一次**
+>>* **死锁**一般多因程序逻辑造成
+>>* **条件变量**能在多个线程之间通信，提供资源利用率。[例程1](./basic_cpp/thread_conditional_var.cpp), [例程2](./basic_cpp/thread_print_alternately.cpp)
+>>* future可以让主线程获取子线程的变量值，用于等待子线程结束后获取变量值。[例程](./basic_cpp/thread_print_alternately.cpp)
+>>* promise用于让子线程获取主线程的变量值。[例程](./basic_cpp/thread_print_alternately.cpp)
+>>* share_future与future类似，但可以同时传入多个线程
+>>* packaged_task跟thread有啥区别？似乎不常用，用到再说。。。
+>>* 线程休眠3s：`std::this_thread::sleep_for(std::chrono::seconds(3))`
+
 
 ### 11. [模板template](https://www.runoob.com/w3cnote/c-templates-detail.html)
 * **目的**：使得类中的某些数据成员或者成员函数的参数、返回值**能取任意类型**
@@ -73,5 +83,5 @@ A* a = new A(); //a存在堆上
 
 ### 13. class和struct有啥区别
 * 区别不大，大多数情况下可互用。[参考](https://blog.csdn.net/alidada_blog/article/details/83419757)
-* 主要区别是在默认的继承访问权上，class默认的是private,strcut默认的是public。
+* 主要区别是在默认的继承访问权上，class默认的是private,struct默认的是public。
 * 一般情况下，struct用于数据结构，class用于定义对象。

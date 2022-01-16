@@ -6,6 +6,7 @@ project(cpp_learning)
 
 #使用C++11标准
 set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -pthread")
 
 #添加一个可执行程序
 #语法：add_executable(程序名 源代码文件)
@@ -79,3 +80,13 @@ add_executable(virtual_func_demo basic_cpp/virtual_func_demo.cpp)
 
 add_executable(unorder_map_demo basic_cpp/unorder_map_demo.cpp)
 add_executable(class_memb_ref_const basic_cpp/class_memb_ref_const.cpp)
+
+add_executable(thread_print_alternative_cpp basic_cpp/thread_print_alternately.cpp)
+target_link_libraries(thread_print_alternative_cpp pthread)
+
+add_executable(thread_conditional_var basic_cpp/thread_conditional_var.cpp)
+target_link_libraries(thread_conditional_var pthread)
+
+add_executable(thread_promise basic_cpp/thread_promise.cpp)
+target_link_libraries(thread_promise pthread)
+
