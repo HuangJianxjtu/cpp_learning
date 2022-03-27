@@ -22,8 +22,23 @@ constructor可以有很多个，overloading(重载);
 * friend(友元)： 友元可以获取class中的private内容，但这样会打破class的封装;相同class
 的各个objects互为friends(友元)
 #### 好的的class该咋写：
->* 数据放在private中
+>* 数据放在private中，函数放在public
 >* 尽可能使用引用传参
 >* 返回值尽量使用引用返回
 >* 应该加const的就要加
 >* 构造函数constructor尽量使用初始化列表
+
+#### 操作符重载-1，成员函数(operator overloading, this)
+```c++
+inline complex& complex::operator += (const complex& r){
+    return __doapl(this,r)
+}
+```
+#### 操作符重载-2，非成员函数(operator overloading, 无this)
+```c++
+inline complex operator + (const complex& x,const complex& y){
+    return complex (real(x)+real(y), imag(x)+imag(y));
+}
+```
+#### temp object(临时对象), typename()
+`complex (real(x)+real(y), imag(x)+imag(y))`就是一个临时对象，其生命到下一行就结束
