@@ -42,3 +42,15 @@ inline complex operator + (const complex& x,const complex& y){
 ```
 #### temp object(临时对象), typename()
 `complex (real(x)+real(y), imag(x)+imag(y))`就是一个临时对象，其生命到下一行就结束
+
+#### 构造函数、析构函数
+析构函数要delete动态分配的内存
+
+#### 三大函数：拷贝构造函数、拷贝赋值函数、（以string为例子）
+深拷贝与浅拷贝
+
+### 3. 堆(stack),栈(heap)与内存管理
+* 栈区存放函数的参数值，局部变量的值等;堆区存放new实例 
+* new与delete成对使用
+* new的时候，先分配memory再调用constructor
+* 
